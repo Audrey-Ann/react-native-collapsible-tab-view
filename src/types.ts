@@ -153,6 +153,13 @@ export type CollapsibleProps = {
    * @default false
    */
   allowHeaderOverscroll?: boolean
+
+  /**
+   * Whether to enable swipe gestures. Swipe gestures are enabled by default. Passing false will disable swipe gestures, but the user can still switch tabs by pressing the tab bar.
+   *
+   * @default true
+   */
+  swipeEnabled?: boolean
 }
 
 export type ContextType<T extends TabName = TabName> = {
