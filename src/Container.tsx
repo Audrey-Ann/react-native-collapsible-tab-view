@@ -83,6 +83,7 @@ export const Container = React.memo(
         onTabChange,
         width: customWidth,
         allowHeaderOverscroll,
+        swipeEnabled = true,
       },
       ref
     ) => {
@@ -530,6 +531,7 @@ export const Container = React.memo(
                 keyExtractor={keyExtractor}
                 renderItem={renderItem}
                 horizontal
+                scrollEnabled={swipeEnabled}
                 pagingEnabled
                 onScroll={scrollHandlerX}
                 showsHorizontalScrollIndicator={false}
