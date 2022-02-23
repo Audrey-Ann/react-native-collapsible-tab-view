@@ -198,6 +198,10 @@ const MaterialTabBar = <T extends TabName = any>({
       scrollEventThrottle={16}
     >
       {tabNames.map((name, i) => {
+        if (tabProps.get(name)?.hidden) {
+          return null
+        }
+
         return (
           <TabItemComponent
             key={name}
